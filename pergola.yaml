@@ -8,3 +8,4 @@ components:
     resources:
       cpu: 100m
       memory: 0.5Gi
+    scheduled: "@release"
