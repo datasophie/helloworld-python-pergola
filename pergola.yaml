@@ -1,0 +1,10 @@
+version: v1
+
+components:
+  - name: hello-world-runner
+    identity: message-handler
+    docker:
+      file: Dockerfile
+    resources:
+      cpu: 100m
+      memory: 0.5Gi
