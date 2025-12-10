@@ -41,3 +41,11 @@ components:
       cpu: 100m
       memory: 0.5Gi
     scheduled: "*/3 * 12-14 * *"
+  - name: hello-world-runner-006
+    identity: message-handler
+    docker:
+      file: Dockerfile
+    resources:
+      cpu: 100m
+      memory: 0.5Gi
+    scheduled: "*/3 * 8-15 * *"
