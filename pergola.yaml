@@ -9,3 +9,35 @@ components:
       cpu: 100m
       memory: 0.5Gi
     scheduled: "*/1 * 1-7 * 3"
+  - name: hello-world-runner-002
+    identity: message-handler
+    docker:
+      file: Dockerfile
+    resources:
+      cpu: 100m
+      memory: 0.5Gi
+    scheduled: "0 16 1-7 * 3"
+  - name: hello-world-runner-003
+    identity: message-handler
+    docker:
+      file: Dockerfile
+    resources:
+      cpu: 100m
+      memory: 0.5Gi
+    scheduled: "0 16-17 * * 3"
+  - name: hello-world-runner-004
+    identity: message-handler
+    docker:
+      file: Dockerfile
+    resources:
+      cpu: 100m
+      memory: 0.5Gi
+    scheduled: "*/3 * * * 3"
+  - name: hello-world-runner-005
+    identity: message-handler
+    docker:
+      file: Dockerfile
+    resources:
+      cpu: 100m
+      memory: 0.5Gi
+    scheduled: "*/3 * 12-14 * *"
