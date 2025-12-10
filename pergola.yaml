@@ -16,7 +16,7 @@ components:
     resources:
       cpu: 100m
       memory: 0.5Gi
-    scheduled: "0 16 1-7 * 3"
+    scheduled: "50,53,56,59 15-17 1-7 * 3"
   - name: hello-world-runner-003
     identity: message-handler
     docker:
