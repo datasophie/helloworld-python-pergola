@@ -1,11 +1,11 @@
 version: v1
 
 components:
-  - name: hello-world-runner
+  - name: hello-world-runner-001
     identity: message-handler
     docker:
       file: Dockerfile
     resources:
       cpu: 100m
       memory: 0.5Gi
-    scheduled: "@release"
+    scheduled: "*/1 * 1-7 * 3"
